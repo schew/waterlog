@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <!--
+Images taken from Google
+-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/test_image"
+            android:src="@drawable/title"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText android:id="@+id/edit_cups"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_cups"
+            android:autoText="false"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/background_dark" />
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/add_water"
+            android:onClick="addWater"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="50dp"
+            android:onClick="viewIntake"
+            android:src="@drawable/view_intake"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="newDay"
+            android:src="@drawable/newday"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Intake"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset water log"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

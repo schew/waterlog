@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/intake_progress"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="-5dp"
+            android:textSize="22dp"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="-60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/test_image"
+                android:src="@drawable/watercup"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="-10dp"
+                />
+
+           <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="0dp"
+                android:id="@+id/cups_drunk"
+                android:text="10"
+                android:textSize="60dp"/>
+        </LinearLayout>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/cups"
+            android:textSize="22dp"/>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/goal_default"
+            android:id="@+id/goal_progress"
+            android:layout_marginTop="20dp"
+            android:padding="25dp"
+            android:textSize="17dp"
+            android:textColor="#000000"/>
+
+        <EditText android:id="@+id/edit_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_goal"
+            android:autoText="false"
+            android:backgroundTint="@android:color/background_dark" />
+
+        <ImageButton android:id="@+id/set_goal"
+            android:layout_marginTop="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/setgoal"/>
+
+        </LinearLayout>
+
+</LinearLayout>
